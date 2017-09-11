@@ -2,7 +2,7 @@
 
 # Problem statement
 
-gets an azure servicebus topic connection string
+gets an azure eventhub connection string
 
 # Example usage
 
@@ -32,7 +32,7 @@ op:
     loginSecret:
     loginTenantId:
     authRule:
-    topic:
+    name:
     namespace:
     resourceGroup:
     # begin optional args

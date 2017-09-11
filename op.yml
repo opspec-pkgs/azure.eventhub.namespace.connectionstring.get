@@ -1,5 +1,5 @@
 name: azure.eventhub.namespace.connectionstring.get
-description: gets an azure eventhub namespace connection string
+description: gets an azure eventhub connection string
 inputs:
   subscriptionId:
     string:
