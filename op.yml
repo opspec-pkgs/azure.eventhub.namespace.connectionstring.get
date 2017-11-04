@@ -47,15 +47,17 @@ inputs:
 outputs:
   connectionString:
     string:
-      description: the topic connection string
-version: 1.0.0
+      constraints: { minLength: 1 }
+      description: the event hub connection string
+      isSecret: true
+version: 2.0.0
 run:
   container:
-    image: { ref: 'opspecpkgs/azure.eventhub.namespace.connectionstring.get:1.0.0' }
+    image: { ref: 'opspecpkgs/azure.eventhub.namespace.connectionstring.get:2.0.0' }
     cmd: [node, /index.js]
-    files: { /index.js }
-    stdOut:
-      connectionString=: connectionString
+    files: 
+      /index.js:
+      /connectionString: $(connectionString)
     envVars:
       subscriptionId:
       loginId:

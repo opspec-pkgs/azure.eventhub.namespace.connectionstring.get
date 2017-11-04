@@ -1,6 +1,7 @@
 const msRestAzure = require('ms-rest-azure');
 const AzureArmEh = require('azure-arm-eventhub');
 const process = require('process');
+const fs = require('fs');
 
 const login = async () => {
     console.log('logging in');
@@ -38,7 +39,7 @@ const getConnString = async (credentials) => {
 
     const connectionString = result[`${process.env.authRuleKey}ConnectionString`];
 
-    console.log(`connectionString=${connectionString}`);
+    fs.writeFileSync('/connectionString', connectionString);
 };
 
 login().then(getConnString).catch(error => {

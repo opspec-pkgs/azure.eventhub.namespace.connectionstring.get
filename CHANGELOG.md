@@ -5,5 +5,10 @@ All notable changes will be documented in this file in accordance with
 
 ## \[Unreleased]
 
+## \[2.0.0] - 2017-11-04
+
+### Changed
+- Update Op to not reveal secret value
+
 ## \[1.0.0] - 2017-07-07
 
