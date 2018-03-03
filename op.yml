@@ -1,4 +1,4 @@
-name: azure.eventhub.namespace.connectionstring.get
+name: github.com/opspec-pkgs/azure.eventhub.namespace.connectionstring.get
 description: gets an azure eventhub connection string
 inputs:
   subscriptionId:
