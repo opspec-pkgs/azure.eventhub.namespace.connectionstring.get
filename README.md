@@ -1,32 +1,35 @@
-[![Build Status](https://travis-ci.org/opspec-pkgs/azure.eventhub.namespace.connectionstring.get.svg?branch=master)](https://travis-ci.org/opspec-pkgs/azure.eventhub.namespace.connectionstring.get)
+[![Build Status](https://travis-ci.orgthub.namespace.connectionstring.get.svg?branch=master)](https://travis-ci.orgthub.namespace.connectionstring.get)
+
+<img src="icon.svg" alt="icon" height="100px">
 
 # Problem statement
 
 gets an azure eventhub connection string
 
+# Format
+
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
+
 # Example usage
 
-> note: in examples, VERSION represents a version of the
-> azure.eventhub.namespace.connectionstring.get pkg
-
-## install
+## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/azure.eventhub.namespace.connectionstring.get#VERSION
+opctl pkg install azure.eventhub.namespace.connectionstring.get#2.0.0
 ```
 
-## run
+## Run
 
 ```
-opctl run github.com/opspec-pkgs/azure.eventhub.namespace.connectionstring.get#VERSION
+opctl run azure.eventhub.namespace.connectionstring.get#2.0.0
 ```
 
-## compose
+## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/azure.eventhub.namespace.connectionstring.get#VERSION }
-  inputs: 
+  pkg: { ref: azure.eventhub.namespace.connectionstring.get#2.0.0 }
+  inputs:
     subscriptionId:
     loginId:
     loginSecret:
@@ -35,10 +38,9 @@ op:
     name:
     namespace:
     resourceGroup:
-    # begin optional args
-    loginType:
+    # params w/ default
     authRuleKey:
-    # end optional args
+    loginType:
   outputs:
     connectionString:
 ```
@@ -48,7 +50,7 @@ op:
 join us on
 [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
 or
-[open an issue](https://github.com/opspec-pkgs/azure.eventhub.namespace.connectionstring.get/issues)
+[open an issue](https://azure.eventhub.namespace.connectionstring.get/issues)
 
 # Releases
 
