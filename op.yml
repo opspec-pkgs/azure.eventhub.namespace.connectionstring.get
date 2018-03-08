@@ -50,10 +50,10 @@ outputs:
       constraints: { minLength: 1 }
       description: the event hub connection string
       isSecret: true
-version: 2.0.0
+version: 2.1.0
 run:
   container:
-    image: { ref: 'opspecpkgs/azure.eventhub.namespace.connectionstring.get:2.0.0' }
+    image: { ref: 'opspecpkgs/azure.eventhub.namespace.connectionstring.get:2.1.0' }
     cmd: [node, /index.js]
     files: 
       /index.js:
